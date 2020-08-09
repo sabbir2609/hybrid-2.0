@@ -22,3 +22,14 @@ def about(request):
     t = "About Us"
     context = {'title':t}
     return render(request, 'about.html', context)
+    
+def feeds(request):
+    t = "Feeds"
+    context = {'title':t}
+    return render(request,'feeds.html', context)
+    
+def user(request):
+    t = "Sign Up"
+    context = {'title':t}
+    return render(request,'user.html', context)
+    
